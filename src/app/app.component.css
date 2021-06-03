@@ -1,0 +1,44 @@
+.ng-invalid{
+    border-color: red;
+}
+.forms{
+    padding: 300px;
+}
+.name-surname{
+    padding: 20px;
+}
+.name{
+    margin: 10px;
+}
+.list_framework{
+    padding: 30px;
+}
+.list_version{
+    padding: 15px;
+}
+.email{
+    padding: 10px;
+}
+div > input[type="email"]:focus + label{
+    opacity: 0;
+}
+div > input[type="email"]:valid + label{
+    opacity: 0;
+}
+div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown){
+    background-color: red;
+}
+div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label{
+    opacity: 0;
+}
+div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements{
+    max-height: 200px;
+}
+div .requirements{
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+}
